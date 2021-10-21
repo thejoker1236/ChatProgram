@@ -12,5 +12,10 @@ namespace Chat.Api.Hubs
         {
             await Clients.All.SendAsync("ReceiveMessage", user, message);
         }
+
+        //public async Task SendMessageToUser(string user, string message, string toUser)
+        //{
+        //    //await Clients.User
+        //}
     }
 }
